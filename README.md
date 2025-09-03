@@ -3,6 +3,7 @@ This is my personal neovim config, forked from [kickstart](https://github.com/nv
 
 ### Debian Setup
 ```bash
+# Update and Install dependencies
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip curl
 
@@ -13,10 +14,14 @@ sudo mkdir -p /opt/nvim-linux-x86_64
 sudo chmod a+rX /opt/nvim-linux-x86_64
 sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
-# make it available in /usr/local/bin, distro installs to /usr/bin
+# Make it available in /usr/local/bin, distro installs to /usr/bin
 sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
+
+# Clone this repo
+git clone https://github.com/christ-pher/neovim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 ```bash
-git clone https://github.com/christ-pher/neovim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+# Run neovim
+nvim
 ```
