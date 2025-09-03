@@ -167,6 +167,13 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- [[ Basic Keymaps ]]
+
+vim.keymap.set('n', 'F', ':Telescope<CR>', { noremap = true, silent = true })
+
+vim.keymap.set('n', 'N', ':tabnew<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'H', ':tabprevious<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'L', ':tabnext<CR>', { noremap = true, silent = true })
+
 --  See `:help vim.keymap.set()`
 
 -- Clear highlights on search when pressing <Esc> in normal mode
