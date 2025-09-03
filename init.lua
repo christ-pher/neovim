@@ -167,8 +167,11 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- [[ Basic Keymaps ]]
+--
+-- [[ MYKEYMAPS ]]
 
-vim.keymap.set('n', 'F', ':Telescope<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'T', ':Telescope<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'F', ':Telescope find_files<CR>', { noremap = true, silent = true })
 
 vim.keymap.set('n', 'N', ':tabnew<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'H', ':tabprevious<CR>', { noremap = true, silent = true })
