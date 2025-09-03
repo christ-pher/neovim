@@ -1,3 +1,7 @@
+# nvim config
+This is my personal neovim config, forked from [kickstart](https://github.com/nvim-lua/kickstart.nvim).
+
+### Debian Setup
 ```bash
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip curl
