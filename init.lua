@@ -58,7 +58,7 @@ end)
 -- Custom shortcuts
 vim.keymap.set('n', 'T', ':Telescope<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'F', ':Telescope find_files<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', 'F', ':Telescope find_files<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'ff', ':Telescope current_buffer_fuzzy_find<CR>', { noremap = true, silent = true })
 
 vim.keymap.set('n', 'N', ':tabnew<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'H', ':tabprevious<CR>', { noremap = true, silent = true })
