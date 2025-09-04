@@ -43,6 +43,8 @@ opt.splitbelow = true
 -- Whitespace display
 opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.tabstop = 4
+opt.shiftwidth = 4
 
 -- Clipboard sync (scheduled to reduce startup time)
 vim.schedule(function()
