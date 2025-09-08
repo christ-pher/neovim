@@ -64,6 +64,8 @@ vim.keymap.set('n', 'N', ':tabnew<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'H', ':tabprevious<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'L', ':tabnext<CR>', { noremap = true, silent = true })
 
+vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+
 -- Clear search highlights
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
